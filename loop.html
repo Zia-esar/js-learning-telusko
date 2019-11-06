@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>loops</title>
+        <script type="text/javascript">
+
+        document.write("================triangle star pattern=============")
+        document.write("<br><br>")
+        
+        for(var i = 1; i<=5;i++){
+            
+            for(var k=1; k<=i; k++){
+                
+                document.write("*")
+                
+            }
+            document.writeln("<br>");
+        }
+
+        document.write("================triangle star pattern=============")
+        document.write("<br><br>")
+
+        for(var a=1; a<=5;a++){
+            for(var b=5;b>=a;b--){
+                document.write("*")
+
+            }
+            document.write("<br>")
+
+        }
+
+        document.write("================triangle star pattern using while loop=============")
+        document.write("<br><br>")
+
+        var c=1
+        
+        while (c<=5){
+            var d = 1
+            while(d<=c){
+                document.write("*")
+                d =d+1
+            }
+            c = c+1
+            document.write("<br>")
+            
+        }
+
+        document.write("================triangle star pattern using do-while loop=============")
+        document.write("<br><br>")
+
+        var z=1
+        do{
+            var x = 1
+            do{
+                document.write("*")
+                x+=1
+            }while(x<=z)
+            
+            document.write("<br>")
+            z=z+1
+
+        }while(z<=5)
+
+        </script>
+    </head>
+</html>
