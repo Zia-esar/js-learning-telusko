@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>events</title>
+        <script type="text/javascript">
+        
+        function buttonClick(){
+
+            alert("button clicked")
+        }
+
+        function view(){
+
+            document.getElementById("heading2").innerHTML="learning javascript"
+        }
+
+        function txtbox(){
+
+            var str = document.getElementById("txtbox1").value;
+            alert(str)
+
+        }
+
+        
+        </script>
+    </head>
+    <body>
+        <button onclick="buttonClick()">click me</button>
+        <button onclick="view()">view</button>
+        <h2  id="heading2">Random text</h2>
+
+        <input id="txtbox1" placeholder="Name">
+        <br>
+        <button onclick="txtbox()" id="btnName"> Click Me</button>
+    </body>
+</html>
